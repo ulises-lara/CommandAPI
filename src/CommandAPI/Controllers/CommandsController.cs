@@ -14,11 +14,5 @@ namespace CommandAPI.Controllers
         {
             _repository = repository;
         }
-
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
-        {
-            return new string[] { "this", "is", "hard", "coded" };
-        }
     }
 }
