@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using CommandAPI.Models;
+using System.Linq;
 
 namespace CommandAPI.Data
 {
@@ -24,7 +25,7 @@ namespace CommandAPI.Data
 
         public IEnumerable<Command> GetAllCommands()
         {
-            throw new System.NotImplementedException();
+            return _context.CommandItems.ToList();
         }
 
         public Command GetCommandById(int id)
