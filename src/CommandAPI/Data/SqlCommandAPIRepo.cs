@@ -30,7 +30,7 @@ namespace CommandAPI.Data
 
         public Command GetCommandById(int id)
         {
-            throw new System.NotImplementedException();
+            return _context.CommandItems.FirstOrDefault(p => p.Id == id);
         }
 
         public bool SaveChanges()
